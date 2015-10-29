@@ -7,6 +7,8 @@
 
 using namespace std;
 
+void otobusuDoldur(Otobus* poto, Vektor* pv, int ilk, int son);
+
 int main()
 {
 	/*Yolcu* pyolcu = new Yolcu();*/
@@ -83,4 +85,10 @@ int main()
 
 
 
+}
+
+void otobusuDoldur(Otobus* poto, Vektor* pv, int ilk, int son)
+{
+	// pv icinden ilk ve son indis arasindaki yolculari al
+	// poto icindeki vektore, aynen yaz
 }
