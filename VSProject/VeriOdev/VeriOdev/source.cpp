@@ -63,11 +63,19 @@ int main()
 			exit(1);
 	}
 
-	dosya >> isim >> no;
-	Yolcu* py = new Yolcu();
-	py->isimAta(isim);
-	py->koltukNoata(no);
-	vektor->insert(*py, no);
+	
+
+	while (!dosya.eof()) 
+	{
+		Yolcu* py = new Yolcu();
+
+		dosya >> isim >> no;
+
+		py->isimAta(isim);
+		py->koltukNoata(no);
+		vektor->insert(*py, no);
+		cout << vektor->at(no).isimgetir() << "    " << vektor->at(no).koltukNogetir() << "   " << &vektor->at(no) << endl;
+	}
 
 	cout << vektor->at(2).isimgetir() << endl;
 
