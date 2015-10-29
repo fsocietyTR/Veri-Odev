@@ -4,7 +4,7 @@ using namespace std;
 
 Yolcu::Yolcu()
 {
-
+	// Degisiklik!!!
 }
 
 //Yolcu::Yolcu(string pisim, int pkoltukNo)
